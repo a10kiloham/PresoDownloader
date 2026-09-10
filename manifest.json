@@ -1,12 +1,13 @@
 {
-  "name": "DocSend Slide Deck Downloader",
-  "version": "2.0",
-  "description": "Download any DocSend slide deck as a PDF",
+  "name": "DocSend & SharePoint Deck Downloader",
+  "version": "3.0",
+  "description": "Download DocSend slide decks and SharePoint / OneDrive documents as a PDF",
   "permissions": ["declarativeNetRequestWithHostAccess", "scripting"],
   "host_permissions": [
-    "*://*.docsend.com/",
+    "*://*.docsend.com/*",
     "*://*.cloudfront.net/*",
-    "*://*.docsend.dropbox.com/*"
+    "*://*.docsend.dropbox.com/*",
+    "*://*.sharepoint.com/*"
   ],
   "background": {
     "service_worker": "service_worker.js",
@@ -22,7 +23,7 @@
     ]
   },
   "action": {
-    "default_title": "Download a DocSend slide deck as a PDF"
+    "default_title": "Download this document as a PDF"
   },
   "icons": {
     "16": "./assets/icon16.png",

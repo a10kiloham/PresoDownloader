@@ -27,3 +27,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Local captures (contain session tokens and confidential documents)
+SharepointHARData/
+*.har
+deck-downloader-*.zip
